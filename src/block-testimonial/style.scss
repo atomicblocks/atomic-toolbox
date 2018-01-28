@@ -1,0 +1,102 @@
+/**
+ * CSS for both frontend and backend
+ */
+
+.wp-block-atomic-atomic-toolbox-testimonial  {
+  background: #f2f2f2;
+  color: $black;
+  margin: 0 auto;
+  max-width: 740px;
+  padding: 2rem;
+
+  .testimonial-info {
+    position: relative;
+    display: inline-block;
+    width: 100%;
+    margin-top: 15px;
+    min-height: 55px;
+    padding-top: 5px;
+  }
+
+  .testimonial-text {
+    font-size: 18px;
+  }
+
+  .testimonial-name {
+    font-size: 1em;
+    line-height: 1.2;
+  }
+
+  .testimonial-title {
+    color: #5c6675;
+  }
+
+  .testimonial-avatar {
+    border-radius: 200px;
+    max-width: 100px;
+  }
+}
+
+.testimonial-info {
+  .blocks-editable {
+    padding-left: 70px;
+  }
+
+  .testimonial-avatar-wrap {
+    position: absolute;
+    left: 0;
+    top: 0;
+  }
+}
+
+.testimonial-image-wrap {
+  height: 55px;
+  width: 55px;
+  background: #ddd;
+  border-radius: 200px;
+
+  button {
+    position: absolute;
+    left: 19px;
+    top: 16px;
+    z-index: 50;
+    padding: 0;
+
+    &:focus {
+      background: none;
+      border: none;
+      outline: none;
+      box-shadow: none;
+    }
+  }
+
+  img {
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+    position: relative;
+    z-index: 10;
+    border-radius: 40px;
+    z-index: 5;
+  }
+}
+
+.has-avatar {
+  .testimonial-image-wrap button {
+    opacity: 0;
+    transition: .3s ease;
+  }
+
+  img {
+    transition: .3s ease;
+  }
+
+  .testimonial-image-wrap:hover {
+    img {
+      opacity: .2;
+    }
+    button {
+      opacity: 1;
+    }
+  }
+}
